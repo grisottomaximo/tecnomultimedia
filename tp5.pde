@@ -1,3 +1,5 @@
+// video: https://www.youtube.com/watch?v=JPOj8apKkY4&ab_channel=MaximoGrisotto
+
 Juego juego;
 
 
@@ -5,7 +7,7 @@ Juego juego;
 void setup() {
   size(500, 500);
   juego = new Juego();
-  juego.clickPresionado();
+  
 }
 
 void draw() {
