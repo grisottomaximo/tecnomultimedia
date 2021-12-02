@@ -62,18 +62,25 @@ class Novela {
     }
     if (gate == 3) {
       this.juego.dibujar();
+
+      if (this.juego.tablero.empate != true) {
+        textSize(20);
+        text("Tom :  Cruz", width/width + 25, 30, 60, 100);
+        text("  Ben :  Circulo", width - 80, 30, 70, 100);
+      }
       if (this.juego.tablero.gano == true) {
         this.pantallaActual = 5;
-        this.gate = 1;
+        this.gate = 1;      
       }
       if (this.juego.tablero.perdio == true) {
         this.pantallaActual = 15;
         this.gate = 1;
+       
       }
     }
   }
   void mouseClickeado() {
-    if(gate==2){
+    if (gate==2) {
       this.creditos.mouseClickeado();
     }
     println(this.pantallaActual);
